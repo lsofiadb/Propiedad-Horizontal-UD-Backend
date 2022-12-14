@@ -1,6 +1,7 @@
 package co.propiedad.horizontal.ud.model;
 
 import co.propiedad.horizontal.ud.model.pk.PersonaPK;
+import co.propiedad.horizontal.ud.model.pk.ResponsablePK;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,10 +16,8 @@ import java.io.Serializable;
 @Data
 public class Responsable implements Serializable{
 
-    @Id
-    private Long FK_NUMERO_RESPONSABLE;
-    @Id
-    private Long FK_TIPO_RESPONSABLE;
+    @EmbeddedId
+    private ResponsablePK responsablePK;
 
     @Column(name = "O_EMAIL")
     private String O_EMAIL;

@@ -1,5 +1,6 @@
 package co.propiedad.horizontal.ud.model;
 
+import co.propiedad.horizontal.ud.model.pk.ResidentePK;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,10 +15,8 @@ import java.io.Serializable;
 @Data
 public class Residente implements Serializable {
 
-    @Id
-    private Long FK_NUMERO_RESIDENTE;
-    @Id
-    private Long FK_TIPO_RESIDENTE;
+    @EmbeddedId
+    private ResidentePK residentePK;
 
     @ManyToOne @JoinColumn(name = "FK_APARTAMENTO_R")
     private Apartamento apartamento;
