@@ -11,4 +11,4 @@ Allow the administrator user to register people related to an specific flat.
 
 ## Postman documentation :books:
 
-You can check endpoints **documentation** [here!]("")
+You can check endpoints **documentation** [here!](https://documenter.getpostman.com/view/17256808/2s8YzUyhZ8)
