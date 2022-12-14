@@ -14,6 +14,6 @@ public class ResponsablePK implements Serializable {
 
     private Long FK_NUMERO_RESPONSABLE;
 
-    private Long FK_TIPO_RESPONSABLE;
+    private String FK_TIPO_RESPONSABLE;
 
 }

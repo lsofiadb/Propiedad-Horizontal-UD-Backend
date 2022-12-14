@@ -96,8 +96,8 @@ create table APARTAMENTO
 (
    K_APARTAMENTO        NUMBER(5)            not null,
    FK_CONJUNTO_A        NUMBER               not null,
-   FK_NUMERO_RESPONSABLE_A NUMBER(5)            not null,
-   FK_TIPO_RESPONSABLE_A VARCHAR2(10)         not null,
+   FK_NUMERO_RESPONSABLE_A NUMBER(5),
+   FK_TIPO_RESPONSABLE_A VARCHAR2(10),
    Q_TAMANIO_APARTAMENTO NUMBER(4)            not null,
    K_BLOQUE             NUMBER(5)            not null,
    constraint PK_APARTAMENTO primary key (K_APARTAMENTO)
@@ -139,10 +139,10 @@ create table CONJUNTO
    O_TELEFONO_CONJUNTO  NUMBER(7)            not null,
    O_DIRECCION_CONJUNTO VARCHAR2(15)         not null,
    DIA_OPORTUNO         DATE                 not null,
-   V_MORA               NUMBER(2,2)          not null,
-   ADMINISTRACION_BASE  NUMBER(3,4)          not null,
+   V_MORA               NUMBER(3,2)          not null,
+   ADMINISTRACION_BASE  NUMBER(4,3)          not null,
    Q_AREA_PRIVADA       NUMBER(3)            not null,
-   DESCUENTO            NUMBER(2,2)          not null,
+   DESCUENTO            NUMBER(3,2)          not null,
    constraint PK_CONJUNTO primary key (K_CONJUNTO)
 );
 

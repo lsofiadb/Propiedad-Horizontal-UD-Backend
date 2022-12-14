@@ -16,4 +16,12 @@ public class ApartamentoService {
     public List<Apartamento> findAll(){
         return apartamentoRepository.findAll();
     }
+
+    public Apartamento findById(Long id){
+        return apartamentoRepository.findById(id).get();
+    }
+
+    public void updateResponsable(Long k_numero, String tipo, Long idApartamento){
+        apartamentoRepository.updateResponsable(k_numero, tipo, idApartamento);
+    }
 }

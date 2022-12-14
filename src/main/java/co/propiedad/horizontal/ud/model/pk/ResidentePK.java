@@ -14,6 +14,6 @@ public class ResidentePK implements Serializable {
 
     private Long FK_NUMERO_RESIDENTE;
 
-    private Long FK_TIPO_RESIDENTE;
+    private String FK_TIPO_RESIDENTE;
 
 }
