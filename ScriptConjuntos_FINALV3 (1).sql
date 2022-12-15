@@ -383,10 +383,10 @@ alter table ZONA_COMUN
       references CONJUNTO (K_CONJUNTO);
 
 ALTER TABLE PERSONA
-   ADD constraint CHECK_TIPO_ID CHECK(TIPO IN ('CC','NI','PA','TI','CE','OT'));
+   ADD constraint CHECK_TIPO_ID CHECK(TIPO IN ('CC','NI','PA','TI','CE','OT', 'cc', 'ni', 'pa', 'ti', 'ce', 'ot'));
 
 ALTER TABLE PERSONA
-   ADD constraint CHECK_GENERO CHECK(I_GENERO IN ('M','F','O'));
+   ADD constraint CHECK_GENERO CHECK(I_GENERO IN ('M','F','O', 'm', 'f', 'o'));
 
 ALTER TABLE PAGO
-   ADD constraint CHECK_FORMA_PAGO CHECK(F_FORMA_PAGO IN ('EF','DEB','CRE','CH','TR','NE','DP'));
+   ADD constraint CHECK_FORMA_PAGO CHECK(F_FORMA_PAGO IN ('EF','DEB','CRE','CH','TR','NE','DP', 'E', 'C', 'ef', 'deb', 'cre', 'ch', 'tr', 'ne', 'dp', 'e', 'c'));
