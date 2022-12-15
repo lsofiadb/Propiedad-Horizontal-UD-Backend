@@ -30,7 +30,7 @@ public class Conjunto {
     private String O_DIRECCION_CONJUNTO;
 
     @Column(name = "DIA_OPORTUNO")
-    private Date DIA_OPORTUNO;
+    private Long DIA_OPORTUNO;
 
     @Column(name = "V_MORA")
     private Long V_MORA;
